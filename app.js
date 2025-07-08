@@ -4,7 +4,7 @@ const fs = require("fs");
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.get("/", (req, res) => res.type('html').send(html));
+app.get("/", (req, res) => res.type('html').send('<h1>Hello World</h1>'));
 
 // Ruta para servir el archivo PDF
 app.get("/rcv/report/22465", (req, res) => {
